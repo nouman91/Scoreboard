@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Admin-Add Match</title>
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="bootstrap/css/simple-sidebar.css" rel="stylesheet" type="text/css" media="all">
+<link href="fonts/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+<div id="main-header"><a href="#menu-toggle" class="navbar-brand" id="menu-toggle">VolleyBall Logo <i class="fa fa-bars"></i></a></div>
+<div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li><strong>Main Menu</strong></li>
+                <li><a href="#"><i class="fa fa-th-large"></i> Matches Dashboard</a></li>
+                <li><a href="#"><i class="fa fa-users"></i> Teams</a></li>
+                <li><a href="#"><i class="fa fa-columns"></i> Courts</a></li>
+                <li class="active"><a href="#"><i class="fa fa-bolt"></i> Matches</a></li>
+                <li><a href="#"><i class="fa fa-bullhorn"></i> Referees</a></li>
+                <li><a href="#"><i class="fa fa-file-text-o"></i> Reports</a></li>
+                <li><a href="#"><i class="fa fa-tv"></i> Advertisments</a></li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid main-area">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1>Add Match</h1>
+                        <hr>
+                        <div class="alert alert-success alert-dismissible" role="alert">
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <strong>Success!</strong> You'r match has successfully created.
+                        </div>
+                        <div class="row">
+                        <form class="clearfix">
+                          <div class="form-group col-md-12">
+                                <label for="chooseMatchTemplate">Use Match Template</label>
+                                <select class="form-control" id="chooseMatchTemplate">
+                                	<option>--Please Select--</option>
+                                    <option>Match Template 1</option>
+                                    <option>Match Template 2</option>
+                                </select>
+                            </div>
+                            <hr>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="chooseLeftTeam">Choose Left Team</label>
+                                <select class="form-control" id="chooseLeftTeam">
+                                	<option>--Please Select--</option>
+                                    <option>Vikings</option>
+                                    <option>Gladiators</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="chooseMatchTitle">Match Title</label>
+                                <select class="form-control" id="chooseMatchTitle">
+                                	<option>--Please Select--</option>
+                                    <option>Match title 1</option>
+                                    <option>Match title 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="chooseMatchCourt">Choose Court</label>
+                                <select class="form-control" id="chooseMatchCourt">
+                                	<option>--Please Select--</option>
+                                    <option>Court 1</option>
+                                    <option>Court 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="chooseReferee"><i class="fa fa-clock-o"></i> Choose Break Time</label>
+                                <div class="row">
+                                <div class="col-md-6">
+                                	<select class="form-control" id="breakTimeMinutes">
+                                        <option>--Minutes--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>.</option>
+                                        <option>.</option>
+                                        <option>59</option>
+                                        <option>60</option>
+                                	</select>
+                                </div>
+                                <div class="col-md-6">
+                                	<select class="form-control" id="breakTimeSeconds">
+                                        <option>--Seconds--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>.</option>
+                                        <option>.</option>
+                                        <option>59</option>
+                                        <option>60</option>
+                                	</select>
+                                </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                          <div class="form-group">
+                          		<label for="chooseRightTeam">Choose Right Team</label>
+                                <select class="form-control" id="chooseRightTeam">
+                                	<option>--Please Select--</option>
+                                    <option>Vikings</option>
+                                    <option>Gladiators</option>
+                                </select>
+                          </div>
+                          <div class="form-group">
+                                <label for="chooseReferee">Choose Referee</label>
+                                <select class="form-control" id="chooseReferee">
+                                	<option>--Please Select--</option>
+                                    <option>Wilson</option>
+                                    <option>Kevin</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="chooseReferee"><i class="fa fa-clock-o"></i> Choose Half Time</label>
+                                <div class="row">
+                                <div class="col-md-6">
+                                	<select class="form-control" id="halfTimeMinutes">
+                                        <option>--Minutes--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>.</option>
+                                        <option>.</option>
+                                        <option>59</option>
+                                        <option>60</option>
+                                	</select>
+                                </div>
+                                <div class="col-md-6">
+                                	<select class="form-control" id="halfTimeSeconds">
+                                        <option>--Seconds--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>.</option>
+                                        <option>.</option>
+                                        <option>59</option>
+                                        <option>60</option>
+                                	</select>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="chooseReferee"><i class="fa fa-clock-o"></i> Choose Timeout Time</label>
+                                <div class="row">
+                                <div class="col-md-6">
+                                	<select class="form-control" id="timeoutTimeMinutes">
+                                        <option>--Minutes--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>.</option>
+                                        <option>.</option>
+                                        <option>59</option>
+                                        <option>60</option>
+                                	</select>
+                                </div>
+                                <div class="col-md-6">
+                                	<select class="form-control" id="timeoutTimeSeconds">
+                                        <option>--Seconds--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>.</option>
+                                        <option>.</option>
+                                        <option>59</option>
+                                        <option>60</option>
+                                	</select>
+                                </div>
+                                </div>
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="form-group col-md-12">
+                                <label for="saveAsTemplate">Save as Template <span class="text-muted">(optional)</span></label>
+                                <input type="text" class="form-control" id="saveAsTemplate" placeholder="Template Name">
+                                <p class="small text-muted">Save match data as template and reuse for other matches.</p>
+                          </div>
+                          <hr>
+                          <div class="grid-actions col-md-12">
+                        	<button type="submit" class="btn btn-primary">Save Match</button>
+                            <button type="reset" class="btn btn-danger">Cancel</button>
+                          </div>
+                        </form>
+                      </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+<script src="bootstrap/js/jquery.min.js" type="application/javascript"></script>
+<script src="bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
+<!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+</body>
+</html>
